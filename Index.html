@@ -1,0 +1,154 @@
+
+cat > ~/storage/shared/CV/index.html <<'EOF'
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV | Paisal</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 20px;
+  background: #050505;
+  color: #ff941f;
+  font-family: monospace;
+}
+header, nav, section {
+  border: 1px solid #ff7900;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #090909;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  box-shadow: 0 0 12px #ff790022;
+}
+h1 { color: #ff8c00; font-size: 27px; }
+h2 { color: #ff8c00; }
+p, a { line-height: 1.8; }
+nav a {
+  display: inline-block;
+  color: #ffad55;
+  text-decoration: none;
+  margin: 8px 12px 8px 0;
+}
+nav a:hover { color: white; }
+.logo {
+  border: 2px solid #ff7900;
+  width: 110px;
+  height: 110px;
+  display: grid;
+  place-items: center;
+  font-size: 35px;
+  font-weight: bold;
+  text-shadow: 0 0 15px #ff7900;
+  box-shadow: 0 0 20px #ff790033;
+}
+.subtitle { color: #ffb56b; font-size: 16px; }
+.line { border-top: 1px solid #ff7900; margin: 18px 0; }
+.item {
+  border-left: 3px solid #ff7900;
+  padding-left: 12px;
+  margin: 18px 0;
+}
+footer { text-align: center; color: #a86b35; padding: 15px; }
+button {
+  background: #ff7900;
+  color: black;
+  border: none;
+  padding: 12px 18px;
+  font-family: monospace;
+  font-weight: bold;
+  cursor: pointer;
+}
+@media (max-width: 480px) {
+  body { padding: 10px; }
+  header, nav, section { padding: 15px; }
+  h1 { font-size: 22px; }
+}
+@media print {
+  body { background: white; color: black; }
+  header, nav, section { border-color: #888; background: white; }
+  nav, button { display: none; }
+  h1, h2, p, a { color: black; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <strong>&gt;_ PAISAL@CV:~</strong>
+    <p>LEARN · BUILD · CREATE</p>
+  </div>
+  <button onclick="window.print()">CETAK / PDF</button>
+</header>
+
+<nav>
+  <a href="#home">⌂ Beranda</a>
+  <a href="#about">Tentang Saya</a>
+  <a href="#education">Pendidikan</a>
+  <a href="#skills">Keahlian</a>
+  <a href="#projects">Proyek</a>
+  <a href="#contact">Kontak</a>
+</nav>
+
+<section id="home">
+  <div class="logo">PM</div>
+  <h1>PAISAL MUHAMAD ALAMSAH</h1>
+  <p class="subtitle">Siswa SMK | Teknik Komputer dan Jaringan</p>
+  <div class="line"></div>
+  <p>Belajar hari ini untuk membangun masa depan yang lebih baik.</p>
+</section>
+
+<section id="about">
+  <h2>01 // TENTANG SAYA</h2>
+  <p>Saya adalah pelajar yang tertarik dengan dunia komputer,
+  jaringan, teknologi, dan pengembangan website.</p>
+</section>
+
+<section id="education">
+  <h2>02 // PENDIDIKAN</h2>
+  <div class="item">
+    <strong>SMK</strong>
+    <p>Jurusan Teknik Komputer dan Jaringan (TKJ)</p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>03 // KEAHLIAN</h2>
+  <p>▸ Dasar jaringan komputer</p>
+  <p>▸ HTML dan CSS</p>
+  <p>▸ Konfigurasi jaringan dengan Packet Tracer</p>
+  <p>▸ Dasar Linux dan server</p>
+</section>
+
+<section id="projects">
+  <h2>04 // PROYEK</h2>
+  <div class="item">
+    <strong>Website CV Pribadi</strong>
+    <p>Membuat website profil dengan HTML dan CSS.</p>
+  </div>
+  <div class="item">
+    <strong>Simulasi Jaringan</strong>
+    <p>Latihan membuat jaringan menggunakan Cisco Packet Tracer.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>05 // KONTAK</h2>
+  <p>Email: tambahkan email kamu</p>
+  <p>Instagram: tambahkan username kamu</p>
+  <p>Lokasi: Bandung, Indonesia</p>
+</section>
+
+<footer>© 2026 PAISAL // KEEP LEARNING_</footer>
+</body>
+</html>
+EOF
